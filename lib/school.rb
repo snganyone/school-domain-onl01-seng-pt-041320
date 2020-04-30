@@ -28,7 +28,9 @@ class School
     def sort
         #new_hash = roster.sort.to_h
         roster.each do |key|
-            puts key
+            key.each do |value|
+                puts value
+            end
         end
     end
 
