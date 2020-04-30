@@ -26,12 +26,7 @@ class School
     end  
 
     def sort
-        #new_hash = roster.sort.to_h
-        roster.each do |key|
-            key.each do |value|
-                puts value.sort_by{|name| name}.to_h
-            end
-        end
+        return roster.sort_by(&:first).map{|k, v| [k,v.sort]}.to_h
     end
 
 end
