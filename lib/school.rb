@@ -29,7 +29,7 @@ class School
         #new_hash = roster.sort.to_h
         roster.each do |key|
             key.each do |value|
-                puts value
+                puts value.sort_by{|name| name}.to_h
             end
         end
     end
