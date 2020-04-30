@@ -26,7 +26,7 @@ class School
     end  
 
     def sort
-        return roster.sort_by(&:first).map{|k, v| [k,v.sort]}.to_h
+        return roster.sort_by(&:first)#.map{|k, v| [k,v.sort]}.to_h
     end
 
 end
