@@ -9,6 +9,7 @@ class School
         @name = name
         @roster = roster
     end
+<<<<<<< HEAD
     
     def add_student(name, grade)
         #Checks if there is grade
@@ -30,3 +31,14 @@ class School
     end
 
 end
+=======
+
+    def add_student(name, grade)
+        if roster.key?(grade) == false
+            @roster[grade] << name
+        binding.pry
+        end
+    end
+
+end
+>>>>>>> 506f7906afbb7a94f057151adb2f626a38fa1d0a
